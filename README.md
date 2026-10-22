@@ -1,5 +1,7 @@
 # Question-in-the-Loop: Interleaved Query Tokens as Visual Summarizers for Video LLMs
-The authors' implementation on LLaVA-Video-7B-Qwen2 (ACM MM 2026).
+(ACM MM 2026)
+
+The authors' implementation on LLaVA-Video-7B-Qwen2.
 
 ## Quick start
 
@@ -33,7 +35,7 @@ Scores are printed and saved, with every answer, under `results/`.
 | `RETENTION_RATIO` | `0.25` | Share of image patches kept in every frame. `1.0` runs the original model. |
 | `TASKS` | `mvbench` | Comma-separated task names: `mvbench`, `videomme`, `longvideobench_val_v`, `mlvu_dev`. |
 | `MODEL_PATH` | `lmms-lab/LLaVA-Video-7B-Qwen2` | Hugging Face id or local checkpoint folder. |
-| `OUTPUT_DIR` | `results/<tasks>_r<ratio>` | Scores (`*_results.json`) and every answer (`*_samples_*.jsonl`). |
+| `OUTPUT_DIR` | `results/<tasks>_r<ratio>` | Scores and every answer. |
 | `LLAVA_VID_LOADER_WORKERS` | `8` | CPU threads that decode upcoming videos while the GPU works. |
 | `LLAVA_VID_FRAME_CACHE` | unset | Folder where runs store and reuse decoded frames. |
 
